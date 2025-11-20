@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="card">
+        <h1>Digital Clock</h1>
+
+        <section class="date-time">
+            <div class="now">
+                <div class="date" id="currentDate">Loading date…</div>
+                <div class="time" id="currentTime">00 : 00 : 00</div>
+            </div>
+        </section>
+
+        <section class="tools">
+            <div class="panel" id="timerPanel">
+                <div style="width:100%;display:flex;justify-content:space-between;align-items:center">
+                    <strong>Countdown Timer</strong>
+                </div>
+
+                <div class="inputs">
+                    <input id="min" type="number" min="0" placeholder="min" />
+                    <input id="sec" type="number" min="0" max="59" placeholder="sec" />
+                </div>
+
+                <div class="display" id="timerDisplay">00 : 00</div>
+
+                <div class="controls">
+                    <button class="btn" id="timerBtn">Start</button>
+                    <button class="ghost" id="timerReset">Reset</button>
+                </div>
+            </div>
+
+            <div class="panel" id="stopPanel">
+                <div style="width:100%;display:flex;justify-content:space-between;align-items:center">
+                    <strong>Stopwatch</strong>
+                </div>
+
+                <div class="display" id="stopwatchDisplay">00 : 00 : 00</div>
+
+                <div class="controls">
+                    <button class="btn" id="stopwatchBtn">Start</button>
+                    <button class="ghost" id="stopwatchReset">Reset</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
